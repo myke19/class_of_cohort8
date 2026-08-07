@@ -28,3 +28,11 @@ student.course = "science";
 console.log(student);
 delete student.year;
 console.log(student);
+
+let employee = {
+    name: "Muyiwa Gandonu",
+    role: "life-saver",
+    salary: 172000,
+    city: "lagos",
+};
+const {name , role , salary , city} = employee;
