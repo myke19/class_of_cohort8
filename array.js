@@ -43,7 +43,7 @@ console.log("this is spliced:" ,students.splice(1 , 2))
 console.log("this is the array:" ,students)
 
 //higher order array methods
-//map, filter, reduce, forEach , findIndex , some , every
+//map, filter, reduce, forEach , find , findIndex , some , every
 const numbers = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
 const doubleNumbers = numbers.map((num) => num * 2)
 console.log(doubleNumbers)
