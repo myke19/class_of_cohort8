@@ -36,3 +36,18 @@ let employee = {
     city: "lagos",
 };
 const {name , role , salary , city} = employee;
+
+let DNA = {
+    gender : "xy",
+    complexion : "fair",
+}
+let offspring = {
+    ...DNA,
+    name : "Michael Tobi",
+    age : 35,
+}
+console.log(offspring);
+
+console.log(Object.keys(offspring));
+console.log(Object.values(offspring));
+console.log(Object.entries(offspring));
