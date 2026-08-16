@@ -67,3 +67,34 @@ console.log(Object.keys(Mother));
 console.log(Object.values(Mother));
 console.log(Object.entries(Mother));
 
+function juice (Apple) {
+    try {
+        if(Apple === "green") {
+            throw new Error("it is green");
+        }
+        console.log("Data loading for user: " + Apple);
+    }catch (error) {
+        console.log("True: " + error.message);
+    }
+}
+juice("green");
+
+function studentAge(name, age){
+    try {
+        if(!name){
+            throw new Error("name must not be empty");
+        }
+        if(age < 16 || age > 60) {
+            throw new Error("you are not eligible. Got: " + age);
+        }
+        console.log("Loading age:" + name +", Age:" + age);
+    }catch (error) {
+        console.log("Failed:" + error.message);
+    }
+}
+studentAge("Michael", 35);
+studentAge("", 25);
+studentAge("Okiki", 3);
+
+
+
