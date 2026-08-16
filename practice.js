@@ -43,3 +43,27 @@ let budget = 5000;
 let itemPrice = 1200;
 console.log(budget > itemPrice && budget > 0);
 
+let Family = {
+    fatherName : "Oluwatobi Michael",
+    age : 35,
+    complexion : "fair",
+    field : "instructor",
+    company : "ikoyi club1938",
+}
+let Mother = {
+    ...Family,
+    motherName : "Blessing",
+    motherAge : 32,
+    occupation : "operation manager",
+    companyName : "link property",
+    firstChildName : "Irewole",
+    firstChildAge : 3,
+    secondChildName : "Okikiola",
+    secondChildAge : "6month",
+}
+console.log(Mother);
+
+console.log(Object.keys(Mother));
+console.log(Object.values(Mother));
+console.log(Object.entries(Mother));
+
