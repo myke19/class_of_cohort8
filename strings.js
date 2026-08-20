@@ -27,3 +27,20 @@ console.log(extractExample.slice(-3));
 console.log(extractExample.substring(0, 3));
 console.log(extractExample.substring(3));
 console.log(extractExample.substring(-3));
+
+// replace and replaceAll
+const stringText = "Michael is handsome , Michael is so smart and cute , Michael is a software developer"
+//console.log(stringText.replace("Michael" , "He"))
+//console.log(stringText.replaceAll("Michael" , "He"))
+splittedText = stringText.split(",")
+console.log(splittedText[1].replaceAll("Michael" , "He"))
+
+//reverse
+let panlindrome = "madam"
+let reversed = panlindrome.split("").reverse()
+console.log(reversed)
+
+function wordCheck(word) {
+    return word === word.split("").reverse().join("") ? "Yes it is a panlindrome" : "No it is not a panlindrome"
+}
+console.log(wordCheck("tundeednut"))
